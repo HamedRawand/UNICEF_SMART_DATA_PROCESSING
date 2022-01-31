@@ -210,6 +210,7 @@ preg_lact_wom_joined <- preg_lact_wom %>% left_join(main_sub, by = c("_submissio
 # Create a subset for ENA software ----------------------------------------
 child_anthropometry_data <- child_joined %>% 
   select(
+    province,
     Date,
     CLUSTER,
     TEAM,
